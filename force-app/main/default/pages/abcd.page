@@ -1,0 +1,5 @@
+<apex:page id="Page" showHeader="false" controller="CaseStatusController" action="{!initPage}" cache="false">
+    <apex:form >
+        Thank you for your custom message from the Visualforce pag
+    </apex:form>                                
+</apex:page>

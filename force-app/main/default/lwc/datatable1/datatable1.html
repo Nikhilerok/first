@@ -1,0 +1,28 @@
+<!-- datatable1.html -->
+<template>
+    
+
+    <lightning-datatable
+        key-field="Id"
+        data={pagedData}
+        columns={columns}
+        hide-checkbox-column="true"
+        onsort={onHandleSort}
+        default-sort-direction={defaultSortDirection}
+        sorted-direction={sortDirection}
+        sorted-by={sortedBy}
+    ></lightning-datatable>
+
+
+    <c-pagination
+        page-number={pageNumber}
+        total-pages={totalPages}
+        total-records={totalRecords}
+        disable-first={disableFirst}
+        disable-last={disableLast}
+        onprevious={handlePrevious}
+        onnext={handleNext}
+    ></c-pagination>
+
+
+</template>

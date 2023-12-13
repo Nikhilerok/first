@@ -1,0 +1,4 @@
+<aura:component controller="CaseStatusController" implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId">
+    <aura:attribute name="caseId" type="String" />
+    <c:createRecord case-id="{!v.caseId}" />
+</aura:component>

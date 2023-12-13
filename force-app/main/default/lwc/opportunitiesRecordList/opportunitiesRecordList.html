@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Opportunities Records">
+        <lightning-datatable if:true={Opportunity.data}
+            key-field="Id"
+            data={Opportunity.data}
+            columns={columns}>
+        </lightning-datatable>
+    </lightning-card>
+</template>

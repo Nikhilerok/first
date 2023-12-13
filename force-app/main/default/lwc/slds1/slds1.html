@@ -1,0 +1,21 @@
+<template>
+  <div class="slds-p-around--medium">
+   <h3 class="slds-text-heading_medium"><strong style="color:#270086;">Create Custom <span style="color:#ff8000">Data-Table with Sortable Column </span> in Lightning Web Component (LWC)</strong></h3> 
+   <lightning-datatable
+           key-field="id"
+           columns={columns}
+           data={data}
+           hide-checkbox-column
+           default-sort-direction={defaultSortDirection}
+           sorted-direction={sortDirection}
+           sorted-by={sortedBy}
+           onsort={onHandleSort}>
+   </lightning-datatable>
+
+<br/><br/>
+ 
+
+ <!--End RelatedTopics Section-->
+ 
+</div>  
+</template>

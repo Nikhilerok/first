@@ -1,0 +1,24 @@
+<template>
+    <div>
+        <lightning-input label="Search Objects" value={searchTerm} onchange={handleObjectSearch}></lightning-input>
+        <template if:true={objectList}>
+            <ul>
+                <template for:each={objectList} for:item="object">
+                    <li key={object}>
+                        <a href="#" onclick={handleObjectSelection} data-object={object}>{object}</a>
+                    </li>
+                </template>
+            </ul>
+        </template>
+        <lightning-input label="Search Records" value={searchText} onchange={handleRecordSearch}></lightning-input>
+        <template if:true={recordList}>
+            <ul>
+                <template for:each={recordList} for:item="record">
+                    <li key={record.Id}>
+                        <a href={record.RecordURL} target="_blank">{record.Name}</a>
+                    </li>
+                </template>
+            </ul>
+        </template>
+    </div>
+</template>

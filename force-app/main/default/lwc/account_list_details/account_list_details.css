@@ -1,0 +1,14 @@
+.drop-target {
+    border: 2px  #0070c0;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.account-details {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+}

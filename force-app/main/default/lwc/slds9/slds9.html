@@ -1,0 +1,22 @@
+<template>
+    <lightning-dual-listbox name="languages"
+                            label="Select Fields"
+                            source-label="Available Fields"
+                            selected-label="Selected Fields"
+                            field-level-help="This is a dual listbox"
+                            options={options}
+                            value={selectedFields}
+                            onchange={handleFieldSelection}
+                            class="custom-dual-listbox"
+                            ></lightning-dual-listbox>
+
+    <lightning-datatable
+        key-field="Id"
+        data={tableData}
+        columns={tableColumns}
+        hide-checkbox-column
+    ></lightning-datatable>
+
+    <!-- Add error message display -->
+    <lightning-messages></lightning-messages>
+</template>

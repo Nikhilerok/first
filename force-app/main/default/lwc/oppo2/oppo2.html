@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Opportunities based on created month : ">
+        <template if:true={opportunitiesByMonth}>
+            <div class="opportunity-cards-container">
+                <template for:each={opportunitiesByMonth} for:item="monthOpportunity">
+                    <div key={monthOpportunity.month} class="opportunity-card">
+                        <div class="month-box slds-box">
+                            <strong>{monthOpportunity.month}</strong>
+                        </div>
+                        <template if:true={monthOpportunity.opportunities.length}>
+                            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                                <thead>
+                                    <tr>
+                                        <th  class="slds-cell-wrap"></th>
+                                        <!-- Add more table headers here if needed -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template for:each={monthOpportunity.opportunities} for:item="opportunity">
+                                        <li key={opportunity.Id}>{opportunity.Name}  </li>
+                                           
+                                        
+                                    </template>
+                                </tbody>
+                            </table>
+                        </template>
+                        <template if:false={monthOpportunity.opportunities.length}>
+                            <h1>No Opportunities found in this month.</h1>
+                        </template>
+                    </div>
+                </template>
+            </div>
+        </template>
+        <template if:false={opportunitiesByMonth}>
+            <p>No Opportunities found.</p>
+        </template>
+    </lightning-card>
+</template>
