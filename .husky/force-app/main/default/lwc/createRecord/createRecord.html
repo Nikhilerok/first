@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Create Contact and Case">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Contact Name" value={contactLastName} onchange={handleContactLastNameChange}></lightning-input>
+            <lightning-input label="Email address" value={email} onchange={handleEmailChange}></lightning-input>
+            <lightning-button variant="brand" label="Create record" onclick={createContactAndCase}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

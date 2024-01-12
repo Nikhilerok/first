@@ -1,0 +1,75 @@
+<template>
+    <template if:true={showStep1}>
+        <!-- Step 1: Account  -->
+        <lightning-card title="Update Account Details" icon-name="standard:account">
+            <lightning-record-edit-form
+                record-id={recordId}
+                object-api-name={objectApiName}
+                onsuccess={handleStep1Success} >
+                <!-- Account fields  -->
+                <lightning-input-field field-name="Name"></lightning-input-field>
+                <lightning-input-field field-name="Industry"></lightning-input-field>
+                <lightning-input-field field-name="Phone"></lightning-input-field>
+                <div class="slds-m-top_medium slds-grid slds-grid_align-end">
+                    <div class="slds-col">
+                        <lightning-button variant="brand" label="Next" onclick={handleNext}></lightning-button>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+        </lightning-card>
+    </template>
+    <template if:true={showStep2}>
+        <!-- Step 2: Contact  -->
+        <lightning-card title="Enter Contact Information" icon-name="standard:contact">
+            <lightning-record-edit-form
+                if:true={showContactFields}
+                object-api-name="Contact"
+                onsuccess={handleStep2Success}
+                class="contact-form" >
+                <!-- Contact fields  -->
+                <lightning-input-field field-name="AccountId" value={accountId}></lightning-input-field>
+                <lightning-input-field field-name="LastName" label="Enter Name "></lightning-input-field>
+                <lightning-input-field field-name="Email"></lightning-input-field>
+
+                <div class="slds-m-top_medium slds-grid slds-grid_align-end">
+                    <div class="slds-col">
+                        <lightning-button variant="brand" label="Previous" onclick={handlePrevious}></lightning-button>
+                    </div>
+                    <div class="slds-col">
+                        <div class="slds-m-left_medium">
+                            <lightning-button variant="brand" label="Next" onclick={handleNextToOpportunity}></lightning-button>
+                        </div>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+        </lightning-card>
+    </template>
+
+    <template if:true={showStep3}>
+        <!-- Step 3: opportunity  -->
+        <lightning-card title="Enter Opportunity Details" icon-name="standard:opportunity">
+            <lightning-record-edit-form
+                if:true={showOpportunityFields}
+                object-api-name="Opportunity"
+                onsuccess={handleStep3Success}
+                class="Opportunity-form" >
+                <!-- Opportunity fields  -->
+                <lightning-input-field field-name="AccountId" value={accountId}></lightning-input-field>
+                <lightning-input-field field-name="Name" label="Enter Opportunity Name "></lightning-input-field>
+                <lightning-input-field field-name="StageName"></lightning-input-field>
+                <lightning-input-field field-name="CloseDate"></lightning-input-field>
+
+                <div class="slds-m-top_medium slds-grid slds-grid_align-end">
+                    <div class="slds-col">
+                        <lightning-button variant="brand" label="Previous" onclick={handlePreviousFromOpportunity}></lightning-button>
+                    </div>
+                    <div class="slds-col">
+                        <div class="slds-m-left_medium">
+                            <lightning-button variant="brand" label="Save" onclick={handleSaveOpportunity}></lightning-button>
+                        </div>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+        </lightning-card>
+    </template>
+</template>

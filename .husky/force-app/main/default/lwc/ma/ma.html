@@ -1,0 +1,53 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="standard:account" alternative-text="Event" size="small"></lightning-icon>
+            Insert Multiple Accounts
+        </h3>
+        <div slot="footer">
+            <lightning-button label="Add" variant="brand" onclick={addRow}></lightning-button>&nbsp;
+            <lightning-button label="Save" variant="brand" onclick={saveMultipleAccounts}></lightning-button>
+        </div>
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col">S.NO</th>
+                    <th scope="col">Search Accounts</th>
+                    <th scope="col">Account Industry</th>
+                    <th scope="col">Account Phone</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={accountRecList} for:item="account" for:index="index">
+                    <tr key={account.keyIndex} data-index={index}>
+                        <td>{index}</td>
+                        <td>
+<lightning-input label="create new accounts , Search and  Edit Account  " value={account.Name} onchange={handleAccountSearchAndEdit}></lightning-input>
+                            <template if:true={account.matchingAccounts}>
+                                <ul>
+                                    <template for:each={account.matchingAccounts} for:item="acc">
+                                        <li key={acc.Id}>
+                                            <a href="#" onclick={handleAccountSelection} data-accountid={acc.Id} data-rowindex={index}>{acc.Name}</a>
+                                        </li>
+                                    </template>
+                                </ul>
+                            </template>
+                            
+                        </td>
+                       
+                        <td>
+                            <lightning-input name="accIndustry" access-key={index} type="text" onchange={handleIndustryChange} value={account.Industry}></lightning-input>
+                        </td>
+                        <td>
+                            <lightning-input name="accPhone" access-key={index} type="Phone" onchange={handlePhoneChange} value={account.Phone}></lightning-input>
+                        </td>
+                        <td>
+                            <lightning-icon icon-name="action:delete" access-key={index} alternative-text="Click to Call" size="small" title="remove " onclick={removeRow}></lightning-icon>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </lightning-card>
+</template>

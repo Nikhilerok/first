@@ -1,0 +1,72 @@
+.custom-search-bar {
+    margin-bottom: 1rem;
+  }
+  
+  .custom-search-input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .custom-search-button {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+
+/* YourComponent.css */
+.custom-dual-listbox {
+  max-height: 160px; /* Adjust the maximum height as needed */
+  width: auto; /* Allow the width to be dynamic based on content */
+}
+
+.custom-dual-listbox .slds-listbox__options,
+.custom-dual-listbox .slds-listbox__selected {
+  max-width: 18ch; /* Set a maximum width of 18 characters */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+/* YourComponent.css */
+.custom-card {
+  border: 1px solid #d8d8d8;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.custom-search-input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #d8d8d8;
+}
+
+.custom-search-button {
+  margin-top: 0.5rem;
+  width: 100%;
+  background-color: #0070c2; /* Change to your desired button color */
+  color: #ffffff;
+  border: none;
+}
+
+.custom-clear-button {
+  background-color: #ffffff;
+  color: #0e12ff;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.custom-dual-listbox {
+  max-height: 160px; /* Adjust the maximum height as needed */
+  overflow-y: auto;
+}

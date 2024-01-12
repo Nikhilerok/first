@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Opportunities">
+        <div class="slds-p-around_medium">
+            <template if:true={opportunities.data}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={opportunities.data}
+                    columns={columns}>
+                </lightning-datatable>
+            </template>
+            <template if:true={opportunities.error}>
+                <p>Error retrieving opportunities: {opportunities.error}</p>
+            </template>
+            <template if:true={showLoadingSpinner}>
+                <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+            </template>
+        </div>
+    </lightning-card>
+</template>

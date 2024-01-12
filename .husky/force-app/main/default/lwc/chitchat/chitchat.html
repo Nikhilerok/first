@@ -1,0 +1,903 @@
+<template>
+    <div class="grid-container">
+        <div class="grid-item">
+            <lightning-button variant="brand" label="1" onclick={handleClick1}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="2" onclick={handleClick2}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="3" onclick={handleClick3}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="4" onclick={handleClick4}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="5" onclick={handleClick5}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="6" onclick={handleClick6}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="7" onclick={handleClick7}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="8" onclick={handleClick8}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="9" onclick={handleClick9}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="10" onclick={handleClick10}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="11" onclick={handleClick11}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="12" onclick={handleClick12}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="13" onclick={handleClick13}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="14" onclick={handleClick14}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="15" onclick={handleClick15}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="16" onclick={handleClick16}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="17" onclick={handleClick17}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="18" onclick={handleClick18}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="19" onclick={handleClick19}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="20" onclick={handleClick20}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="21" onclick={handleClick21}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="22" onclick={handleClick22}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="23" onclick={handleClick23}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="24" onclick={handleClick24}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="grid-item">
+            <lightning-button variant="brand" label="25" onclick={handleClick25}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+       
+    </div>
+
+    <!-- modal Start -->
+    <template if:true={isShowModal1}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>I saw a kitten eating chicken in the kitchen
+                        </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+    <!-- modal Start -->
+    <template if:true={isShowModal2}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b> (X5) </b>
+                    </br>
+                    <b> 1   Red lorry, yellow lorry
+                    </br>
+                        2   She sees cheese 
+                         </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+
+    <!-- modal Start -->
+    <template if:true={isShowModal3}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b> But the thought I thought wasnt the   
+                            thought I thought I thought.
+                         </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+    <!-- modal Start -->
+    <template if:true={isShowModal4}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>1  Red leather, yellow leather.
+                        </br>
+                            2  Three free throws.
+                           </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+
+    <!-- modal Start -->
+    <template if:true={isShowModal5}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b> A proper cup of coffee from a copper coffee pot
+                        </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+    <!-- modal Start -->
+    <template if:true={isShowModal6}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>Black background, brown background
+                        </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+
+    <!-- modal Start -->
+    <template if:true={isShowModal7}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>Nine nice night nurses nursing nicely
+                        </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+    <!-- modal Start -->
+    <template if:true={isShowModal8}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>1 Zebras zig and zebras zag
+</br>
+                            2   Unique New York
+                           </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+
+    <!-- modal Start -->
+    <template if:true={isShowModal9}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>I have got a date at a quarter to eight; I will see you at the gate, so dont be late
+                        </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+    <!-- modal Start -->
+    <template if:true={isShowModal10}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>You know New York, you need New York, you know you need unique New York
+                        </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+
+    <!-- modal Start -->
+    <template if:true={isShowModal11}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>Thin sticks, thick bricks
+                        </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+    <!-- modal Start -->
+    <template if:true={isShowModal12}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>She sells seashells by the seashore </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+
+    <!-- modal Start -->
+    <template if:true={isShowModal13}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>If practice makes perfect and perfect needs practice, I’m perfectly practised and practically perfect.
+
+                        </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+    <!-- modal Start -->
+    <template if:true={isShowModal14}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>. If you notice this notice, you will notice that this notice is not worth noticing </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+
+    <!-- modal Start -->
+    <template if:true={isShowModal15}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+              
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b> When you write copy, you have the right to copyright the copy you write.
+                        </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+    <!-- modal Start -->
+    <template if:true={isShowModal16}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>If a dog chews shoes,
+                            whose shoes does he choose?
+                            </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+
+    <!-- modal Start -->
+    <template if:true={isShowModal17}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+              
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>A loyal warrior will rarely worry
+                            why we rule.
+                            </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+    <!-- modal Start -->
+    <template if:true={isShowModal18}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>I scream, you scream,
+                            we all scream for ice cream!
+                           when it's hot outside!
+                            </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+
+    <!-- modal Start -->
+    <template if:true={isShowModal19}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>Dont trouble the trouble. 
+                            if you trouble the trouble, 
+                            trouble troubles you. 
+                            i am not the trouble , i am the truth...!</b>
+                    </lightning-card>
+                </div>
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+    <!-- modal Start -->
+    <template if:true={isShowModal20}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b> If two witches would watch two watches, which witch would watch which watch?
+
+                        </b>
+                    </lightning-card>
+                </div>
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+
+    <!-- modal Start -->
+    <template if:true={isShowModal21}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+               
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>The thirty-three thieves thought that they thrilled the throne throughout Thursday.
+                        </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+    <!-- modal Start -->
+    <template if:true={isShowModal22}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                 
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>A box of biscuits, a box of mixed biscuits, and a biscuit mixer
+                        </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+
+    <!-- modal Start -->
+    <template if:true={isShowModal23}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b> He threw three free throws
+                        </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+    <!-- modal Start -->
+    <template if:true={isShowModal24}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b> But the thought I thought wasn’t the   
+                            thought I thought I thought. </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+
+    <!-- modal Start -->
+    <template if:true={isShowModal25}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b> Eddie edited it </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+     <!-- modal Start -->
+     <template if:true={isShowModal3}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>Throne thieves</b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end --> <!-- modal Start -->
+    <template if:true={isShowModal3}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>  But the thought I thought wasn’t the   
+                            thought I thought I thought.
+                         </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end --> <!-- modal Start -->
+    <template if:true={isShowModal3}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card icon-name="standard:people" style="font-size: larger;">
+                        <b>A proper cup of coffee from a copper coffee pot
+                        </b>
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end --> <!-- modal Start -->
+    <template if:true={isShowModal3}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card title="Abhijeeth" icon-name="standard:people">
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end --> <!-- modal Start -->
+    <template if:true={isShowModal3}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+
+                <!-- modal body start -->
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-card title="Surya" icon-name="standard:people">
+                    </lightning-card>
+                </div>
+
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={hideModalBox}>
+                        Close
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <!-- modal end -->
+</template>

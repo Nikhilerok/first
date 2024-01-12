@@ -1,0 +1,11 @@
+<template>
+    <div class="account-list">
+        <template for:each={accounts.data} for:item="account" if:true={accounts.data}>
+            <div key={account.Id} class="account-box" draggable="true" data-item={account.Id} ondragstart={handleDragStart}>
+                <div class="account-details">
+                    <p>{account.Name}</p>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

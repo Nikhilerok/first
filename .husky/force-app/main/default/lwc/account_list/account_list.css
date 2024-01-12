@@ -1,0 +1,24 @@
+.account-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.account-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #a2f3ff;
+    cursor: move; /* Add cursor style */
+
+}
+
+.account-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}

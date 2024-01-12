@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Create Records">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Name" value={name} onchange={handleNameChange}></lightning-input>
+            <lightning-input label="Email" value={email} onchange={handleEmailChange}></lightning-input>
+            <lightning-button label="Create" onclick={createRecords}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

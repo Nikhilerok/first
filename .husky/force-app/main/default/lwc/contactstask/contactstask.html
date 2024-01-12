@@ -1,0 +1,48 @@
+<!-- contactstask.html -->
+<template>
+    <div class="slds-box">
+        <div class="slds-card slds-p-around_medium">
+            <h2 class="slds-text-heading_medium">Contacts with Pagination</h2>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_1-of-2">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <lightning-input type="text" label="Search contact name" value={searchTerm} onchange={handleSearchTermChange}></lightning-input>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <div class="slds-grid slds-grid_align-end">
+                        <div class="slds-m-top_medium">
+                            <lightning-button label="Search" onclick={handleSearch} class="slds-m-right_x-small"></lightning-button>
+                            <lightning-button label="Clear" onclick={clearSearch} class="slds-m-right_x-small"></lightning-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <lightning-datatable
+            key-field="Id"
+            data={contacts}
+            columns={columns}
+            hide-checkbox-column="true"
+            default-sort-direction={defaultSortDirection}
+            sorted-direction={sortDirection}
+            sorted-by={sortedBy}
+            onsort={onHandleSort}>            
+        >
+    </lightning-datatable>
+    <!-- Add this line to handle sorting   handleSort  -->
+        <div class="slds-grid slds-grid_vertical-align-center slds-wrap">
+            <div class="slds-col">
+                <lightning-button label="Previous" onclick={handlePrevious}></lightning-button>
+            </div>
+            <div class="slds-col">
+                Page.No <strong>{pageNumber}</strong>  {totalPages}
+            </div>
+            <div class="slds-col">
+                <lightning-button label="Next" onclick={handleNext}></lightning-button>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Sent Emails">
+        <template if:true={emailList}>
+            <lightning-datatable
+                key-field="id"
+                data={emailList}
+                columns={columns}
+                hide-checkbox-column="true">
+            </lightning-datatable>
+        </template>
+    </lightning-card>
+</template>

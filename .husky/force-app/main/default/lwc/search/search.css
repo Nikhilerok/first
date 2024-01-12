@@ -1,0 +1,9 @@
+.abcd{
+    padding:var(--padding-value);
+    background-color: rgb(82, 195, 2);
+}
+
+.multi-bg-example{
+    padding:var(--padding-value);
+   background-color: rgb(160, 250, 107);
+}
